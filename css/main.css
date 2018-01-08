@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  }
+
+.background-main {
+  background-color: rgb(5, 9, 15);
+  color: white;
+  }
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+.pos-left {
+  font-size: 18px;
+  float: left;
+  padding-left: 35px;
+  }
+
+.pos-right {
+  float: right;
+}
+
+.litle-menu {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.litle-menu::before, .litle-menu::after {
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  display: block;
+  content="";
+  background: white;
+}
+
+.litle-menu::before {top: -8px;}
+.litle-menu::after {top: 8px;}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	text-decoration: none;
+}
+
+.h1 {
+  font-size: 5rem ;
+  font-weight: 250;
+}
+
+.h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-2 text-button-main {
+  padding: 10px;
+  width: 70px;
+  height: 30px;
+}
+
+.content-1 {
+  margin-top: 20px;
+}
+
+.text col-12 {
+  margin-top: 20px;
+  float: right;
+}
+
+.background-theme {
+  background-image : url(assets/images/portada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+.cover {
+  background: rgba(0,0,0,0.8);
+  padding: 3rem;
+}
+
+.figure {
+  width: auto;
+}
+
+.text {
+  color: #393939;
+  padding: 2rem  3.5rem;
+  display: inline-block;
+  align-self : center;
+}
+
+.text p {
+  line-height: 1.5;
+}
+
+img {
+  width:100% ;
+}
+
+footer {
+  padding: 3rem;
+}
+
+.col-section {
+  width: 100%;
+}
+
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.line {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: rgb(189, 189, 189);
+  border-image: initial;
+}
+
+.space {
+  margin-bottom: 2% ;
+  margin-top: 2%;
+}
+
+button {
+background-color: rgb(35,177,42);
+color:white;
+padding: 10px;
+border-radius: 10px;
+width: 80px;
+}
+
+.text-button-main {
+  font-size: 1rem;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 7px;
+  padding: 12px;
+}
+
+.col-12 { width: 100% ;}
+.col-1 {width: 8.333333%;}
+
+@media (min-width: 768px){
+.col-section {
+  width:50%;
+  float: left;
+}
+
+section {
+  margin-top: 0;
+  overflow: auto;
+  display:flex;
+}
+
+.text {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover {
+  padding: 10 rem 0;
+}
+
+.view-mobile {
+  display: none;
+}
+
+.view-desktop {
+  display: block;
+}
+
+
+@media (min-width: 1200px) {
+section {
+  margin:0px 10rem; }
+}
